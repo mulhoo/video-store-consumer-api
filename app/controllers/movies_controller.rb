@@ -8,7 +8,7 @@ class MoviesController < ApplicationController
       data = Movie.all
     end
 
-    render status: :ok, json: data
+    render status: :ok, json: data.as_json
   end
 
   def create
